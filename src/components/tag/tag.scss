@@ -51,4 +51,34 @@
         color: #3F51B5;
         border-color: #3F51B5;
     }
+    
+    &-yellow {
+        background-color: #FFF9C4;
+        color: #FBC02D;
+        border-color: #FBC02D;
+    }
+ 
+    &-cyan {
+        background-color: #E0FFFF;
+        color: #00BCD4;
+        border-color: #00BCD4;
+    }
+ 
+    &-lime {
+        background-color: #F0FFB3;
+        color: #CDDC39;
+        border-color: #CDDC39;
+    }
+ 
+    &-brown {
+        background-color: #E6D3C1;
+        color: #795548;
+        border-color: #795548;
+    }
+ 
+    &-teal {
+        background-color: #B2DFDB;
+        color: #009688;
+        border-color: #009688;
+    }
 }
