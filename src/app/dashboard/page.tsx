@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import { Box, Modal, Title, Icon, Tag } from '@/components'; //Fix to had something like this ||import Box from "../ui/box";||
+import { Box, Modal, Title, Icon, Tag, Progress } from '@/components'; //Fix to had something like this ||import Box from "../ui/box";||
 
 export default function Page() {
     const ref = React.useRef<HTMLDialogElement>();
@@ -23,6 +23,12 @@ export default function Page() {
                 </Modal>
             </Box>
             <Box height={9} width={3}>
+                <Progress value={53}></Progress>
+                <Progress value={13}></Progress>
+                <Progress value={1}></Progress>
+                <Progress value={70}></Progress>
+                <Progress value={80}></Progress>
+                <Progress value={100}></Progress>
             </Box>
             <Box height={9} width={3}>
                 <div className='flex flex-col mt-4 mx-4'>
