@@ -1,10 +1,9 @@
 'use client'
 
 import React from "react";
-import { Box, Modal, Title } from "../ui"; //Fix to had something like this ||import Box from "../ui/box";||
+import { Box, Modal, Title, Icon, Tag } from '@/components'; //Fix to had something like this ||import Box from "../ui/box";||
 
 export default function Page() {
-
     const ref = React.useRef<HTMLDialogElement>();
 
     return (
@@ -26,9 +25,42 @@ export default function Page() {
             <Box height={9} width={3}>
             </Box>
             <Box height={9} width={3}>
-                <div className='flex flex-col mt-4'>
-                    <div className='flex flex-rox align-between ml-4'>
+                <div className='flex flex-col mt-4 mx-4'>
+                    <div className='flex flex-rox items-center justify-between mb-4'>
                         <Title size='24px'>Flow du mois</Title>
+                        <Icon name='bx-plus' color='dark-gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>-90€ sample <Tag>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='blue'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='light-blue'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='green'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='orange'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='red'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='pink'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
+                    </div>
+                    <div className='flex flex-rox justify-between'>
+                        <p>+190€ sample <Tag color='purple'>Category</Tag></p>
+                        <Icon name='bx-edit' color='gray'></Icon>
                     </div>
                 </div>
             </Box>
