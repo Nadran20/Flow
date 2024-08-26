@@ -23,12 +23,7 @@ export default function Page() {
                 </Modal>
             </Box>
             <Box height={9} width={3}>
-                <Progress value={53}></Progress>
-                <Progress value={13}></Progress>
-                <Progress value={1}></Progress>
-                <Progress value={70}></Progress>
-                <Progress value={80}></Progress>
-                <Progress value={100}></Progress>
+                <Progress value={50}></Progress>
             </Box>
             <Box height={9} width={3}>
                 <div className='flex flex-col mt-4 mx-4'>
