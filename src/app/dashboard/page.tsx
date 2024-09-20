@@ -1,7 +1,8 @@
 'use client'
 
 import React from "react";
-import { Box, Modal, Title, Icon, Tag, Progress } from '@/components'; //Fix to had something like this ||import Box from "../ui/box";||
+import {Box, Icon, Modal, Progress, Tag, Title} from '@/components'; //Fix to had something like this ||import Box from "../ui/box";||
+import {User} from "@/app/dashboard/user/user";
 
 export default function Page() {
     const ref = React.useRef<HTMLDialogElement>();
@@ -14,13 +15,28 @@ export default function Page() {
                     <Title size='32px'>800,73€</Title>
                 </div>
             </Box>
-            <Box height={12} width={6} />
-            <Box height={3} width={3}>
-                <button onClick={() => {ref.current?.showModal()}}>Afficher la fenêtre</button>
+            <Box height={12} width={6}>
+                <button onClick={() => {
+                    ref.current?.showModal()
+                }}>Afficher la fenêtre
+                </button>
                 <Modal reference={ref}>
                     <p>Test Modal</p>
-                    <button onClick={() => {ref.current?.close()}}>Fermer à fenetre</button>    
+                    <button onClick={() => {
+                        ref.current?.close()
+                    }}>Fermer à fenetre
+                    </button>
                 </Modal>
+            </Box>
+            <Box height={3} width={3}>
+                <div className={'h-full'}>
+                    <div className={'flex justify-center flex-col mx-4 h-full'}>
+                        <div className={'flex items-center'}>
+                            <User/>
+                        </div>
+                        <button className={'mt-2'}>Edit user</button>
+                    </div>
+                </div>
             </Box>
             <Box height={9} width={3}>
                 <Progress value={50}></Progress>

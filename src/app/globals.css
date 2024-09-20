@@ -1,7 +1,8 @@
+@import "~boxicons/css/boxicons.min.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "~boxicons/css/boxicons.min.css";
 
 ::backdrop {
   background-color: #939393;
@@ -10,6 +11,10 @@
 
 dialog[open] {
   animation: fadein 0.5s ease-in forwards;
+}
+
+body {
+  background: linear-gradient(90.88deg, rgb(251, 251, 251) 0.25%, rgb(243, 243, 243) 112.18%);
 }
   
 @keyframes fadein {

@@ -1,4 +1,5 @@
-import { CSSProperties, ReactNode } from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
+import './box.css'
 
 export interface BoxProps {
   width: number;
@@ -14,7 +15,7 @@ const Box: React.FC<BoxProps> = ({ height, width, onClick, children }: BoxProps)
   };
 
   return (
-    <div className="rounded-xl border border-slate-100 shadow" style={style} onClick={onClick}>
+    <div className="rounded-xl border border-slate-100 shadow box" style={style} onClick={onClick}>
       {children}
     </div>
   );
